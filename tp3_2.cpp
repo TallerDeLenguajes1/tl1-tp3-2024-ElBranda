@@ -43,7 +43,7 @@ void loadMatrix(int matrix[YEAR][MONTH]) {
 
     for (int i = 0; i < YEAR; i++) {
         for (int j = 0; j < MONTH; j++) {
-            matrix[i][j] = rand()%(MIN_VAL+MAX_VAL) + MIN_VAL + 1;
+            matrix[i][j] = rand()%(MAX_VAL-MIN_VAL) + MIN_VAL + 1;
         }
     }
 }
